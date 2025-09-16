@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kritika Kotecha - Professional Portfolio</title>
+    <style>
+        /* General Body and Font Settings */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            margin: 0 1.5rem;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-item:hover {
+            color: #3f51b5;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #3f51b5;
+            color: #fff;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        /* Section Styling */
+        h2 {
+            font-size: 2.2rem;
+            color: #3f51b5;
+            border-bottom: 3px solid #3f51b5;
+            padding-bottom: 0.75rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Infographic Grid */
+        .infographic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            text-align: center;
+        }
+
+        .infographic-item {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .infographic-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .infographic-item h3 {
+            font-size: 2.8rem;
+            color: #3f51b5;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .infographic-item p {
+            margin: 0;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Entry Styling for Experience and Projects */
+        .entry {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .entry:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .entry h3 {
+            margin-top: 0;
+            color: #3f51b5;
+            font-size: 1.5rem;
+        }
+
+        .entry p {
+            font-style: italic;
+            color: #888;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background-color: #3f51b5;
+            border-radius: 50%;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            text-align: center;
+        }
+
+        .contact-item {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-item a {
+            text-decoration: none;
+            color: #3f51b5;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background-color: #333;
+            color: #fff;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#education" class="nav-item">Education</a>
+        <a href="#awards" class="nav-item">Awards</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#contact" class="nav-item">Contact</a>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Kritika Kotecha</h1>
+            <p>Class of 2026</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a highly motivated and results-driven professional with experience in operations, financial control, and strategic marketing. My background includes enhancing operational efficiency, driving business synergies, and leading key initiatives, complemented by a strong academic foundation in economics, mathematics, and statistics.</p>
+        </section>
+
+        <section id="infographics">
+            <h2>Key Skills & Achievements</h2>
+            <div class="infographic-grid">
+                <div class="infographic-item">
+                    <h3>72%</h3>
+                    <p>Exceeded goals for 6 consecutive quarters</p>
+                </div>
+                <div class="infographic-item">
+                    <h3>$500k</h3>
+                    <p>Worth of business synergies driven</p>
+                </div>
+                <div class="infographic-item">
+                    <h3>25%</h3>
+                    <p>Enhanced operational efficiency</p>
+                </div>
+                <div class="infographic-item">
+                    <h3>100%</h3>
+                    <p>Error-free rate managing $50M+ daily payments</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <div class="entry">
+                <h3>JP Morgan Chase - Operations Analyst</h3>
+                <p>Bangalore | July 2022 - May 2024</p>
+                <ul>
+                    <li>Recipient of Top Contributor Award out of 400+ dept analysts for outstanding delivery and execution.</li>
+                    <li>Presented with Quarterly Excellence Award for 6 consecutive quarters for exceeding goals by 72%.</li>
+                    <li>Conferred with Emerging Innovator Award by leadership team for driving $500k worth biz synergies.</li>
+                    <li>Enhanced operational efficiency by 25% in payments reconciliation by optimizing excel models and tools.</li>
+                    <li>Achieved 100% error-free rate in managing $50M+ daily payments through rigorous quality checks.</li>
+                    <li>Delivered Strong audit rating for 8 Quarters by implementing compliance guardrails and inspections.</li>
+                    <li>Reduced 52% of onboarding time by developing a guide for managers in collaboration with Exec Director.</li>
+                </ul>
+            </div>
+            <div class="entry">
+                <h3>National Stock Exchange - HR Summer Intern</h3>
+                <p>Mumbai | Apr 2025 - May 2025</p>
+                <ul>
+                    <li>Led employee survey with 200+ participants, uncovering key drivers of employee retention and growth.</li>
+                    <li>Devised 6-part retention plan estimated to lift pay satisfaction by 35% & reduce early exits by 18%.</li>
+                </ul>
+            </div>
+            <div class="entry">
+                <h3>Dreamlakefront LLC - Digital Marketing Intern</h3>
+                <p>May 2021 - Jun 2021</p>
+                <ul>
+                    <li>Achieved a 32% increase in bookings by using SEO to optimize the Airbnb & Vrbo pages of the company.</li>
+                    <li>Improved revenue by 25% (~$125k in 1 month) by strategizing popular locations using seasonal trends.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="entry">
+                <h3>MBA- Marketing and Strategy</h3>
+                <p>BITS School of Management (BITSOM), Mumbai | 2026</p>
+            </div>
+            <div class="entry">
+                <h3>BSc- Economics, Mathematics and Statistics</h3>
+                <p>Mount Carmel College, Bangalore | 8.40/10, Dept Rank 3 | 2022</p>
+            </div>
+            <div class="entry">
+                <h3>Higher Secondary Certificate Exam (ISC)</h3>
+                <p>Vidya Niketan School, Bangalore | 85.40% | 2019</p>
+            </div>
+            <div class="entry">
+                <h3>Senior Secondary Examination (ICSE)</h3>
+                <p>Sophia High School, Bangalore | 92.83% | 2017</p>
+            </div>
+        </section>
+
+        <section id="awards">
+            <h2>Awards & Achievements</h2>
+            <ul>
+                <li>Recipient of the Top Contributor Award out of 400+ dept analysts.</li>
+                <li>Awarded the Quarterly Excellence Award for 6 consecutive quarters.</li>
+                <li>Conferred with the Emerging Innovator Award by leadership for driving $500k in business synergies.</li>
+                <li>Received 5 appreciations from stakeholder teams for quick responses and efficient work management.</li>
+                <li>Named District's Best Secretary, outperforming over 150 club secretaries.</li>
+                <li>Awarded Best Professional Development Project in South Asia (1/1250) as Chair, Wednesday Dynamics.</li>
+                <li>Honored with District's Best Community Service Project Award (1/100) as Chair, Stop the Social Stigma.</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Research Projects</h2>
+            <div class="entry">
+                <h3>Management project on Rainwater Harvesting in Bengaluru City</h3>
+                <p>January 2021 - March 2022</p>
+                <ul>
+                    <li>Selected as 1 of 4/100 students for a research grant under Long-Term Projects Management Research Fund.</li>
+                    <li>Surveyed 250+ Bengaluru residents and used Hypothesis testing to evaluate effectiveness of schemes.</li>
+                </ul>
+            </div>
+            <div class="entry">
+                <h3>Analysis of Indian IPOs Before and During the Pandemic</h3>
+                <p>July 2021 - December 2021</p>
+                <ul>
+                    <li>Analyzed Indian IPOs gains against NIFTY50 in Pandemic & Pre-Pandemic periods with 425 data points.</li>
+                    <li>Researched on 30 IPOs released pre-Covid, 55 IPOs released post covid.</li>
+                    <li>Avg listing gains were 11.77% for pre-Covid IPOs and 34.07% for post-Covid IPOs.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>Your Email Here</p>
+                </div>
+                <div class="contact-item">
+                    <h3>LinkedIn</h3>
+                    <p><a href="#">Your LinkedIn Profile</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>GitHub</h3>
+                    <p><a href="#">Your GitHub Profile</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>This is a professional portfolio built from Kritika's resume content.</p>
+    </footer>
+
+</body>
+</html>
